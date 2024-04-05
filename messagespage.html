@@ -1,0 +1,880 @@
+<html><head><style type="text/css">
+  </style><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><style id="hotspots-styles">
+      .hotspot {
+        position: absolute;
+        border: 1px solid #2a9fd8;
+        background: rgba(0, 173, 255, 0.54);
+        opacity: 0;
+        z-index: -1;
+        pointer-events:none;
+      }
+    </style><script id="s_turbo" src="https://animaapp.s3.amazonaws.com/static/turbo.es2017-umd.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  
+  @font-face {
+    font-family: "SF Pro Text-Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/6493ccb06d8287a214c6fd2e/fonts/fontsfree-net-sfprotext-semibold.ttf') format("truetype");
+  }
+  
+  .container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .container-center-vertical > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+  
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+  }
+  
+  .container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+  
+  :root { 
+    --black: #000000b2;
+    --black-2: #00000066;
+    --black-3: #010101;
+    --label-colorlightprimary: #000000;
+    --white: #ffffff66;
+    --white-2: #ffffffb2;
+    --white-3: #ffffff;
+   
+    --font-size-l: 15px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xl: 17px;
+    --font-size-xs: 7px;
+    --font-size-xxl: 30px;
+   
+    --font-family-lantinghei_sc-heavy: "Lantinghei SC-Heavy", Helvetica;
+    --font-family-lao_mn-regular: "Lao MN-Regular", Helvetica;
+    --font-family-sf_pro_text-semibold: "SF Pro Text-Semibold", Helvetica;
+  }
+  .laomn-regular-normal-black-15px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-14px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-7px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-14px-2 {
+    color: var(--black-2);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .lantingheisc-heavy-normal-black-30px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lantinghei_sc-heavy);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .sfprotext-normal-black-17px {
+    color: var(--black-3);
+    font-family: var(--font-family-sf_pro_text-semibold);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .lantingheisc-heavy-normal-black-12px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lantinghei_sc-heavy);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-12px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  :root {
+  }
+  
+  
+  .background-decor {
+    background-color: transparent;
+    height: 844px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .icon-magnifyingglass {
+    background-color: transparent;
+    position: absolute;
+  }
+  </style><script id="anime-js-script" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js" integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8=" crossorigin="anonymous"></script><script id="imgloaded-js-script" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script><style id="action-links-styles">
+  @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+  </style><style>
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  
+  @font-face {
+    font-family: "SF Pro Text-Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/6493ccb06d8287a214c6fd2e/fonts/fontsfree-net-sfprotext-semibold.ttf') format("truetype");
+  }
+ 
+  .container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .container-center-vertical > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+  
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+  }
+  
+  .container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+  :root { 
+    --black: #000000b2;
+    --black-2: #00000066;
+    --black-3: #010101;
+    --label-colorlightprimary: #000000;
+    --white: #ffffff66;
+    --white-2: #ffffffb2;
+    --white-3: #ffffff;
+   
+    --font-size-l: 15px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xl: 17px;
+    --font-size-xs: 7px;
+    --font-size-xxl: 30px;
+   
+    --font-family-lantinghei_sc-heavy: "Lantinghei SC-Heavy", Helvetica;
+    --font-family-lao_mn-regular: "Lao MN-Regular", Helvetica;
+    --font-family-sf_pro_text-semibold: "SF Pro Text-Semibold", Helvetica;
+  }
+  .laomn-regular-normal-black-15px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-14px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-7px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-14px-2 {
+    color: var(--black-2);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .lantingheisc-heavy-normal-black-30px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lantinghei_sc-heavy);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .sfprotext-normal-black-17px {
+    color: var(--black-3);
+    font-family: var(--font-family-sf_pro_text-semibold);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .lantingheisc-heavy-normal-black-12px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lantinghei_sc-heavy);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-12px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  :root {
+  }
+  
+  
+  .background-decor {
+    background-color: transparent;
+    height: 844px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .icon-magnifyingglass {
+    background-color: transparent;
+    position: absolute;
+  }
+  /* screen - messages */
+  
+  .messages {
+    background-color: var(--white-3);
+    height: 844px;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 390px;
+  }
+  
+  .messages .background-decor-FIZW7b {
+    background-color: transparent;
+    height: 844px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .messages .vector-1-FIZW7b {
+    background-color: transparent;
+    height: 467px;
+    left: 0px;
+    position: absolute;
+    top: 377px;
+    width: 390px;
+  }
+  
+  .messages .rectangle-2-FIZW7b {
+    background-color: transparent;
+    height: 601px;
+    left: 17px;
+    position: absolute;
+    top: 139px;
+    width: 357px;
+  }
+  
+  .messages .line-2-FIZW7b {
+    top: 208px;
+  }
+  
+  .messages .line-3-FIZW7b {
+    top: 308px;
+  }
+  
+  .messages .line-4-FIZW7b {
+    background-color: transparent;
+    height: 1px;
+    left: 28px;
+    position: absolute;
+    top: 408px;
+    width: 330px;
+  }
+  
+  .messages .line-3-Qv5dDj {
+    top: 706px;
+  }
+  
+  .messages .line-2-Qv5dDj {
+    top: 610px;
+  }
+  
+  .messages .line-1-FIZW7b {
+    background-color: transparent;
+    height: 1px;
+    left: 27px;
+    position: absolute;
+    top: 510px;
+    width: 330px;
+  }
+  
+  .messages .ellipse-2-FIZW7b {
+    background-color: var(--white-3);
+    border-radius: 31.44px/33.5px;
+    height: 67px;
+    left: 37px;
+    position: absolute;
+    top: 224px;
+    width: 63px;
+  }
+  
+  .messages .default_pfp-1-FIZW7b {
+    left: 36px;
+    top: 223px;
+    width: 65px;
+  }
+  
+  .messages .hey-were-making-barbie-2-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 113px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 0.6;
+    position: absolute;
+    text-align: left;
+    top: 242px;
+    width: 198px;
+  }
+  
+  .messages .margot-robbie-hibarbie-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 113px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 223px;
+    width: 244px;
+  }
+  
+  .messages .ellipse-3-FIZW7b {
+    background-color: var(--white-3);
+    border-radius: 33.5px;
+    height: 67px;
+    left: 38px;
+    position: absolute;
+    top: 323px;
+    width: 67px;
+  }
+  
+  .messages .default_pfp-1-Qv5dDj {
+    left: 36px;
+    top: 322px;
+    width: 69px;
+  }
+  
+  .messages .why-did-u-rate-me-2-stars-man-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 118px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 0.6;
+    position: absolute;
+    text-align: left;
+    top: 341px;
+    width: 211px;
+  }
+  
+  .messages .women-in-tech-witunimelb-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 118px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 321px;
+    width: 221px;
+  }
+  
+  .messages .ellipse-4-FIZW7b {
+    background-color: var(--white-3);
+    border-radius: 33.5px;
+    height: 67px;
+    left: 37px;
+    position: absolute;
+    top: 428px;
+    width: 67px;
+  }
+  
+  .messages .default_pfp-1-XG1vO4 {
+    left: 36px;
+    top: 427px;
+    width: 69px;
+  }
+  
+  .messages .do-u-wanna-collab-on-our-next-tiktok-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 118px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 0.6;
+    position: absolute;
+    text-align: left;
+    top: 446px;
+    width: 211px;
+  }
+  
+  .messages .hank-green-thebettergreen-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 118px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 426px;
+    width: 226px;
+  }
+  
+  .messages .ellipse-5-FIZW7b {
+    background-color: var(--white-3);
+    border-radius: 33.5px;
+    height: 67px;
+    left: 36px;
+    position: absolute;
+    top: 528px;
+    width: 67px;
+  }
+  
+  .messages .default_pfp-1-fT6hLu {
+    left: 35px;
+    top: 528px;
+    width: 69px;
+  }
+  
+  .messages .congrats-on-your-event-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 117px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 0.6;
+    position: absolute;
+    text-align: left;
+    top: 547px;
+    width: 211px;
+  }
+  
+  .messages .umsu-uummssuu-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 117px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 527px;
+    width: 197px;
+  }
+  
+  .messages .ellipse-6-FIZW7b {
+    background-color: var(--white-3);
+    border-radius: 33.5px;
+    height: 67px;
+    left: 36px;
+    position: absolute;
+    top: 628px;
+    width: 67px;
+  }
+  
+  .messages .default_pfp-1-bSQpba {
+    left: 35px;
+    top: 627px;
+    width: 69px;
+  }
+  
+  .messages .give-me-tips-on-making-cool-reels-please-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 117px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 0.6;
+    position: absolute;
+    text-align: left;
+    top: 648px;
+    width: 211px;
+  }
+  
+  .messages .joe-biden-potus-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 117px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 628px;
+    width: 197px;
+  }
+  
+  .messages .title-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 32px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 52px;
+    width: 179px;
+  }
+  
+  .messages .your-personal-saved-videos-vault-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 32px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 93px;
+    width: 326px;
+  }
+  
+  .messages .status-bar-i-phone-15-FIZW7b {
+    background-color: transparent;
+    height: 47px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    width: 389px;
+  }
+  
+  .messages .notch-FiHRVC {
+    background-color: transparent;
+    height: 30px;
+    left: 113px;
+    position: absolute;
+    top: 0px;
+    width: 164px;
+  }
+  
+  .messages .left-side-FiHRVC {
+    background-color: transparent;
+    height: 21px;
+    left: 27px;
+    position: absolute;
+    top: 14px;
+    width: 54px;
+  }
+  
+  .messages .status-bar-time-Nx72NO {
+    background-color: transparent;
+    border-radius: 24px;
+    height: 21px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 54px;
+  }
+  
+  .messages .x941-saUvBi {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.41px;
+    line-height: 22px;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    white-space: nowrap;
+    width: 54px;
+  }
+  
+  .messages .right-side-FiHRVC {
+    background-color: transparent;
+    height: 13px;
+    left: 285px;
+    position: absolute;
+    top: 19px;
+    width: 77px;
+  }
+  
+  .messages .battery-gkVbyo {
+    background-color: transparent;
+    height: 13px;
+    left: 50px;
+    position: absolute;
+    top: 0px;
+    width: 27px;
+  }
+  
+  .messages .wifi-gkVbyo {
+    background-color: transparent;
+    height: 12px;
+    left: 26px;
+    position: absolute;
+    top: 1px;
+    width: 17px;
+  }
+  
+  .messages .icon-mobile-signal-gkVbyo {
+    background-color: transparent;
+    height: 12px;
+    left: 0px;
+    position: absolute;
+    top: 1px;
+    width: 18px;
+  }
+  
+  .messages .rectangle-1-FIZW7b {
+    background-color: var(--white);
+    border-radius: 20px;
+    height: 28px;
+    left: 31px;
+    position: absolute;
+    top: 155px;
+    width: 329px;
+  }
+  
+  .messages .icon-magnifyingglass-FIZW7b {
+    height: 13px;
+    left: 42px;
+    top: 162px;
+    width: 13px;
+  }
+  
+  .messages .search-messages-FIZW7b {
+    background-color: transparent;
+    height: auto;
+    left: 61px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 159px;
+    width: 211px;
+  }
+  
+  .messages .image-4-FIZW7b {
+    background-color: transparent;
+    height: 69px;
+    left: 35px;
+    object-fit: cover;
+    position: absolute;
+    top: 224px;
+    width: 69px;
+  }
+  
+  .messages .image-5-FIZW7b {
+    background-color: transparent;
+    height: 72px;
+    left: 35px;
+    object-fit: cover;
+    position: absolute;
+    top: 321px;
+    width: 71px;
+  }
+  
+  .messages .image-6-FIZW7b {
+    background-color: transparent;
+    height: 69px;
+    left: 36px;
+    object-fit: cover;
+    position: absolute;
+    top: 426px;
+    width: 69px;
+  }
+  
+  .messages .image-7-FIZW7b {
+    background-color: transparent;
+    height: 69px;
+    left: 35px;
+    object-fit: cover;
+    position: absolute;
+    top: 527px;
+    width: 69px;
+  }
+  
+  .messages .image-8-FIZW7b {
+    background-color: transparent;
+    height: 69px;
+    left: 35px;
+    object-fit: cover;
+    position: absolute;
+    top: 626px;
+    width: 69px;
+  }
+  
+  .messages .rectangle-43-FIZW7b {
+    background-color: var(--white);
+    height: 70px;
+    left: 0px;
+    position: absolute;
+    top: 774px;
+    width: 390px;
+  }
+  
+  .messages .home-indicator-FIZW7b {
+    background-color: transparent;
+    height: 34px;
+    left: 9px;
+    position: absolute;
+    top: 806px;
+    width: 375px;
+  }
+  
+  .messages .home-indicator-VKy5N1 {
+    background-color: var(--label-colorlightprimary);
+    border-radius: 100px;
+    height: 5px;
+    left: 121px;
+    position: relative;
+    top: 21px;
+    width: 134px;
+  }
+  
+  .messages .rectangle-44-FIZW7b {
+    background-color: transparent;
+    height: 31px;
+    left: 246px;
+    position: absolute;
+    top: 784px;
+    width: 57px;
+  }
+  
+  .messages .chat-bubble-typing-o-FIZW7b {
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    left: 264px;
+    position: absolute;
+    top: 788px;
+    width: 21px;
+  }
+  
+  .messages .vector-FIZW7b {
+    background-color: transparent;
+    cursor: pointer;
+    height: 21px;
+    left: 184px;
+    position: absolute;
+    top: 788px;
+    width: 21px;
+  }
+  
+  .messages .vector-43-NJ6c1H {
+    background-color: transparent;
+    height: 23px;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 23px;
+  }
+  
+  .messages .vector-44-NJ6c1H {
+    background-color: transparent;
+    height: 9px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 9px;
+  }
+  
+  .messages .user-profile-focus-c-FIZW7b {
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    left: 336px;
+    position: absolute;
+    top: 789px;
+    width: 17px;
+  }
+  
+  .messages .icon-magnifyingglass-Qv5dDj {
+    cursor: pointer;
+    height: 18px;
+    left: 109px;
+    top: 790px;
+    width: 18px;
+  }
+  
+  .messages .outline-home-1-FIZW7b {
+    background-color: transparent;
+    height: 24px;
+    left: 37px;
+    position: absolute;
+    top: 788px;
+    width: 24px;
+  }
+  
+  .messages .default_pfp-1 {
+    background-color: transparent;
+    height: 69px;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  .messages .line-2 {
+    background-color: transparent;
+    height: 1px;
+    left: 27px;
+    position: absolute;
+    width: 330px;
+  }
+  
+  .messages .line-3 {
+    background-color: transparent;
+    height: 1px;
+    left: 28px;
+    position: absolute;
+    width: 330px;
+  }
+  </style><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="messages"><div class="container-center-horizontal"><div class="messages screen " data-id="45:1056" style="margin-top: 70px;"><img class="background-decor-FIZW7b" data-id="45:1057" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/background-decor-1.png" alt="Background decor"><img class="vector-1-FIZW7b" data-id="45:1061" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/vector-1-1.svg" alt="Vector 1"><img class="rectangle-2-FIZW7b" data-id="47:1283" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/rectangle-2.svg" alt="Rectangle 2"><img class="line-2-FIZW7b line-2" data-id="47:1363" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/line-2.svg" alt="Line 2"><img class="line-3-FIZW7b line-3" data-id="47:1394" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/line-2.svg" alt="Line 3"><img class="line-4-FIZW7b" data-id="47:1410" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/line-2.svg" alt="Line 4"><img class="line-3-Qv5dDj line-3" data-id="47:1473" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/line-2.svg" alt="Line 3"><img class="line-2-Qv5dDj line-2" data-id="47:1472" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/line-2.svg" alt="Line 2"><img class="line-1-FIZW7b" data-id="47:1441" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/line-2.svg" alt="Line 1"><div class="ellipse-2-FIZW7b" data-id="73:266"></div><img class="default_pfp-1-FIZW7b default_pfp-1" data-id="47:1493" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/default-pfp-1.png" alt="Default_pfp 1"><p class="hey-were-making-barbie-2-FIZW7b laomn-regular-normal-black-14px" data-id="47:1496">Hey! We’re making Barbie 2...</p><div class="margot-robbie-hibarbie-FIZW7b lantingheisc-heavy-normal-black-12px" data-id="47:1495">Margot Robbie @hibarbie</div><div class="ellipse-3-FIZW7b" data-id="73:267"></div><img class="default_pfp-1-Qv5dDj default_pfp-1" data-id="47:1498" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/default-pfp-1.png" alt="Default_pfp 1"><p class="why-did-u-rate-me-2-stars-man-FIZW7b laomn-regular-normal-black-14px" data-id="47:1499">Why did u rate me 2 stars man?</p><div class="women-in-tech-witunimelb-FIZW7b lantingheisc-heavy-normal-black-12px" data-id="47:1500">Women in Tech @witunimelb</div><div class="ellipse-4-FIZW7b" data-id="73:268"></div><img class="default_pfp-1-XG1vO4 default_pfp-1" data-id="47:1502" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/default-pfp-1.png" alt="Default_pfp 1"><p class="do-u-wanna-collab-on-our-next-tiktok-FIZW7b laomn-regular-normal-black-14px" data-id="47:1503">Do u wanna collab on our next tiktok?</p><div class="hank-green-thebettergreen-FIZW7b lantingheisc-heavy-normal-black-12px" data-id="47:1504">Hank Green @thebettergreen</div><div class="ellipse-5-FIZW7b" data-id="73:269"></div><img class="default_pfp-1-fT6hLu default_pfp-1" data-id="47:1506" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/default-pfp-1.png" alt="Default_pfp 1"><div class="congrats-on-your-event-FIZW7b laomn-regular-normal-black-14px" data-id="47:1507">Congrats on your event!</div><div class="umsu-uummssuu-FIZW7b lantingheisc-heavy-normal-black-12px" data-id="47:1508">UMSU @uummssuu</div><div class="ellipse-6-FIZW7b" data-id="73:270"></div><img class="default_pfp-1-bSQpba default_pfp-1" data-id="47:1510" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/default-pfp-1.png" alt="Default_pfp 1"><p class="give-me-tips-on-making-cool-reels-please-FIZW7b laomn-regular-normal-black-14px" data-id="47:1511">Give me tips on making cool reels please:)</p><div class="joe-biden-potus-FIZW7b lantingheisc-heavy-normal-black-12px" data-id="47:1512">Joe Biden @POTUS</div><h1 class="title-FIZW7b lantingheisc-heavy-normal-black-30px" data-id="60:611">SAVIOR</h1><p class="your-personal-saved-videos-vault-FIZW7b laomn-regular-normal-black-15px" data-id="60:612">Your personal saved videos vault.</p><div class="status-bar-i-phone-15-FIZW7b" data-id="60:613"><img class="notch-FiHRVC" data-id="I60:613;839:7137" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660facfa1291049d173902c0/img/notch@2x.png" alt="Notch"><div class="left-side-FiHRVC" data-id="I60:613;839:7139"><div class="status-bar-time-Nx72NO" data-id="I60:613;839:7140"><div class="x941-saUvBi sfprotext-normal-black-17px" data-id="I60:613;839:7140;839:7100">9:41</div></div></div><div class="right-side-FiHRVC" data-id="I60:613;839:7141"><img class="battery-gkVbyo" data-id="I60:613;839:7142" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660facfa1291049d173902c0/img/battery@2x.png" alt="Battery"><img class="wifi-gkVbyo" data-id="I60:613;839:7146" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/wifi-2.svg" alt="Wifi"><img class="icon-mobile-signal-gkVbyo" data-id="I60:613;839:7150" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660facfa1291049d173902c0/img/icon---mobile-signal.svg" alt="Icon / Mobile Signal"></div></div><div class="rectangle-1-FIZW7b" data-id="88:372"></div><img class="icon-magnifyingglass-FIZW7b icon-magnifyingglass" data-id="88:374" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/icon---magnifyingglass-5.svg" alt="Icon / magnifyingglass"><div class="search-messages-FIZW7b laomn-regular-normal-black-14px-2" data-id="88:373">Search messages...</div><img class="image-4-FIZW7b" data-id="94:356" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/image-4@2x.png" alt="image 4"><img class="image-5-FIZW7b" data-id="94:358" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/image-5@2x.png" alt="image 5"><img class="image-6-FIZW7b" data-id="94:362" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/image-6@2x.png" alt="image 6"><img class="image-7-FIZW7b" data-id="94:364" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/image-7@2x.png" alt="image 7"><img class="image-8-FIZW7b" data-id="94:366" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/image-8@2x.png" alt="image 8"><div class="rectangle-43-FIZW7b" data-id="142:990"></div><div class="home-indicator-FIZW7b" data-id="142:991"><div class="home-indicator-VKy5N1" data-id="I142:991;5:3093"></div></div><img class="rectangle-44-FIZW7b" data-id="142:1015" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660facfa1291049d173902c0/img/rectangle-21.svg" alt="Rectangle 44"><a href="messages"><img class="chat-bubble-typing-o-FIZW7b" data-id="142:992" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fd10a644e4d73737da3f3/img/chat-bubble-typing-oval--messages-message-bubble-typing-chat-5.svg" alt="chat-bubble-typing-oval--messages-message-bubble-typing-chat" data-hotspot-id="hp-0"></a><a href="add-post-page"><div class="vector-FIZW7b" data-id="142:1004" data-hotspot-id="hp-1"><img class="vector-43-NJ6c1H" data-id="142:1005" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660facfa1291049d173902c0/img/vector-43.svg" alt="Vector-43"><img class="vector-44-NJ6c1H" data-id="142:1006" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/vector-44-2.svg" alt="Vector-44"></div></a><a href="profile"><img class="user-profile-focus-c-FIZW7b" data-id="142:1011" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fd10a644e4d73737da3f3/img/user-profile-focus--close-geometric-human-person-profile-focus-u-5.svg" alt="user-profile-focus--close-geometric-human-person-profile-focus-user" data-hotspot-id="hp-2"></a><a href="search-page"><img class="icon-magnifyingglass-Qv5dDj icon-magnifyingglass" data-id="142:1016" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fd10a644e4d73737da3f3/img/icon---magnifyingglass-5.svg" alt="Icon / magnifyingglass" data-hotspot-id="hp-3"></a><img class="outline-home-1-FIZW7b" data-id="142:1017" src="https://cdn.animaapp.com/projects/660facadaf324b34bd99fb70/releases/660fc4887bf728e79cb6b9b7/img/outline---home-1-3.svg" alt="outline / home-1"></div></div><script src="launchpad-js/launchpad-banner.js" async=""></script><script defer="" src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script><div id="anima-interface" data-turbo-permanent="true" class="idle"><!---->
+</body></html>
