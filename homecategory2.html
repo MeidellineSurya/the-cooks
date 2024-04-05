@@ -1,0 +1,951 @@
+<html><head><style type="text/css">
+  </style><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><style id="hotspots-styles">
+      .hotspot {
+        position: absolute;
+        border: 1px solid #2a9fd8;
+        background: rgba(0, 173, 255, 0.54);
+        opacity: 0;
+        z-index: -1;
+        pointer-events:none;
+      }
+    </style><script id="s_turbo" src="https://animaapp.s3.amazonaws.com/static/turbo.es2017-umd.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  
+  @font-face {
+    font-family: "SF Pro Text-Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/6493ccb06d8287a214c6fd2e/fonts/fontsfree-net-sfprotext-semibold.ttf') format("truetype");
+  }
+
+  .container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .container-center-vertical > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+  
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+  }
+  
+  .container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+  :root { 
+    --black: #000000b2;
+    --black-2: #010101;
+    --black-3: #00000066;
+    --label-colorlightprimary: #000000;
+    --white: #ffffff66;
+    --white-2: #ffffff;
+    --white-3: #ffffffb2;
+   
+    --font-size-l: 17px;
+    --font-size-m: 15px;
+    --font-size-s: 14px;
+    --font-size-xl: 30px;
+    --font-size-xs: 12px;
+    --font-size-xxs: 7px;
+   
+    --font-family-lantinghei_sc-heavy: "Lantinghei SC-Heavy", Helvetica;
+    --font-family-lao_mn-regular: "Lao MN-Regular", Helvetica;
+    --font-family-sf_pro_text-semibold: "SF Pro Text-Semibold", Helvetica;
+  }
+  .laomn-regular-normal-black-15px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-14px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-7px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-xxs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .lantingheisc-heavy-normal-black-30px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lantinghei_sc-heavy);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .sfprotext-normal-black-17px {
+    color: var(--black-2);
+    font-family: var(--font-family-sf_pro_text-semibold);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-12px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-black-14px-2 {
+    color: var(--black-3);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .lantingheisc-heavy-normal-black-12px {
+    color: var(--label-colorlightprimary);
+    font-family: var(--font-family-lantinghei_sc-heavy);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .laomn-regular-normal-white-12px {
+    color: var(--white-2);
+    font-family: var(--font-family-lao_mn-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  :root {
+  }
+  
+  
+  .title-7KuyOc {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 179px;
+  }
+  
+  .background-decor {
+    background-color: transparent;
+    height: 844px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .rectangle-7 {
+    background-color: var(--white);
+    position: absolute;
+  }
+  
+  .rectangle-22-2voLeP {
+    background-color: transparent;
+    height: 31px;
+    left: 90px;
+    position: absolute;
+    top: 10px;
+    width: 57px;
+  }
+  
+  .notch-rdaKGn {
+    background-color: transparent;
+    height: 30px;
+    left: 113px;
+    position: absolute;
+    top: 0px;
+    width: 164px;
+  }
+  
+  .left-side-rdaKGn {
+    background-color: transparent;
+    height: 21px;
+    left: 27px;
+    position: absolute;
+    top: 14px;
+    width: 54px;
+  }
+  
+  .status-bar-time-YPg5xh {
+    background-color: transparent;
+    border-radius: 24px;
+    height: 21px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 54px;
+  }
+  
+  .x941-GuGQdY {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.41px;
+    line-height: 22px;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    white-space: nowrap;
+    width: 54px;
+  }
+  
+  .battery-qL0AlJ {
+    background-color: transparent;
+    height: 13px;
+    left: 50px;
+    position: absolute;
+    top: 0px;
+    width: 27px;
+  }
+  
+  .wifi-qL0AlJ {
+    background-color: transparent;
+    height: 12px;
+    left: 26px;
+    position: absolute;
+    top: 1px;
+    width: 17px;
+  }
+  
+  .icon-mobile-signal-qL0AlJ {
+    background-color: transparent;
+    height: 12px;
+    left: 0px;
+    position: absolute;
+    top: 1px;
+    width: 18px;
+  }
+  
+  .chat-bubble-typing-o-C61RwL {
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    left: 264px;
+    position: absolute;
+    top: 788px;
+    width: 21px;
+  }
+  
+  .user-profile-focus-c-C61RwL {
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    left: 336px;
+    position: absolute;
+    top: 789px;
+    width: 17px;
+  }
+  
+  .icon-magnifyingglass-VMr6Om {
+    cursor: pointer;
+    height: 18px;
+    left: 109px;
+    top: 790px;
+    width: 18px;
+  }
+  
+  .icon-magnifyingglass {
+    background-color: transparent;
+    position: absolute;
+  }
+  
+  .title-C61RwL {
+    background-color: transparent;
+    height: auto;
+    left: 32px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 52px;
+    width: 179px;
+  }
+  
+  .your-personal-saved-videos-vault-C61RwL {
+    background-color: transparent;
+    height: auto;
+    left: 32px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 93px;
+    width: 326px;
+  }
+  /* screen - home-page-u40category-2u41 */
+  
+  .home-page-u40category-2u41 {
+    background-color: #ffffff;
+    height: 844px;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 390px;
+  }
+  
+  .home-page-u40category-2u41 .background-decor-C61RwL {
+    --z-index: 0;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/background-decor.png);
+    background-size: 100% 100%;
+    height: 844px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .home-page-u40category-2u41 .background-decor-VMr6Om {
+    --z-index: 1;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/background-decor.png);
+    background-size: 100% 100%;
+    height: 844px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .home-page-u40category-2u41 .videos-C61RwL {
+    --z-index: 2;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/videos@2x.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 273px;
+    left: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 205px;
+    width: 158px;
+  }
+  
+  .home-page-u40category-2u41 .bottom-bar-C61RwL {
+    --z-index: 3;
+    background-color: transparent;
+    cursor: pointer;
+    height: 70px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 774px;
+    width: 390px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-7-2voLeP {
+    --z-index: 0;
+    background-color: #ffffff66;
+    height: 70px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .home-page-u40category-2u41 .outline-home-1-2voLeP {
+    --z-index: 1;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/outline---home-1-2.svg);
+    background-size: 100% 100%;
+    height: 24px;
+    left: 37px;
+    opacity: 1;
+    position: absolute;
+    top: 14px;
+    width: 24px;
+  }
+  
+  .home-page-u40category-2u41 .icon-magnifyingglass-2voLeP {
+    --z-index: 2;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/icon---magnifyingglass-1.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 18px;
+    left: 109px;
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    width: 18px;
+  }
+  
+  .home-page-u40category-2u41 .user-profile-focus-c-2voLeP {
+    --z-index: 3;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/user-profile-focus--close-geometric-human-person-profile-focus-u-1.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 20px;
+    left: 336px;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    width: 17px;
+  }
+  
+  .home-page-u40category-2u41 .chat-bubble-typing-o-2voLeP {
+    --z-index: 4;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/chat-bubble-typing-oval--messages-message-bubble-typing-chat-1.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 20px;
+    left: 264px;
+    opacity: 1;
+    position: absolute;
+    top: 14px;
+    width: 21px;
+  }
+  
+  .home-page-u40category-2u41 .home-indicator-C61RwL {
+    --z-index: 4;
+    background-color: transparent;
+    height: 34px;
+    left: 9px;
+    opacity: 1;
+    position: absolute;
+    top: 806px;
+    width: 375px;
+  }
+  
+  .home-page-u40category-2u41 .home-indicator-BJ28qq {
+    --z-index: 0;
+    background-color: #000000;
+    border-radius: 100px;
+    height: 5px;
+    left: 121px;
+    opacity: 1;
+    position: relative;
+    top: 21px;
+    width: 134px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-8-C61RwL {
+    --z-index: 5;
+    background-color: #ffffffb2;
+    border-radius: 0px 0px 20px 20px;
+    height: 50px;
+    left: 34px;
+    opacity: 0.8;
+    position: absolute;
+    top: 420px;
+    width: 150px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-9-C61RwL {
+    --z-index: 6;
+    background-color: transparent;
+    border: 0.5px solid;
+    border-color: #000000b2;
+    border-radius: 5px;
+    height: 23px;
+    left: 53px;
+    opacity: 1;
+    position: absolute;
+    top: 432px;
+    width: 23px;
+  }
+  
+  .home-page-u40category-2u41 .summary-C61RwL {
+    --z-index: 7;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Lao MN-Regular', Helvetica;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 82px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    top: 430px;
+    width: auto;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-15-C61RwL {
+    --z-index: 8;
+    background-color: transparent;
+    border: 0.5px solid;
+    border-color: #000000b2;
+    border-radius: 5px;
+    height: 23px;
+    left: 53px;
+    opacity: 1;
+    position: absolute;
+    top: 432px;
+    width: 23px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-21-C61RwL {
+    --z-index: 9;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/rectangle-21.svg);
+    background-size: 100% 100%;
+    height: 31px;
+    left: 21px;
+    opacity: 1;
+    position: absolute;
+    top: 785px;
+    width: 57px;
+  }
+  
+  .home-page-u40category-2u41 .home-indicator-VMr6Om {
+    --z-index: 10;
+    background-color: transparent;
+    height: 34px;
+    left: 9px;
+    opacity: 1;
+    position: absolute;
+    top: 806px;
+    width: 375px;
+  }
+  
+  .home-page-u40category-2u41 .home-indicator-qn0gnF {
+    --z-index: 0;
+    background-color: #000000;
+    border-radius: 100px;
+    height: 5px;
+    left: 121px;
+    opacity: 1;
+    position: relative;
+    top: 21px;
+    width: 134px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-22-C61RwL {
+    --z-index: 11;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/rectangle-21.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 31px;
+    left: 21px;
+    opacity: 1;
+    position: absolute;
+    top: 785px;
+    width: 57px;
+  }
+  
+  .home-page-u40category-2u41 .outline-home-1-C61RwL {
+    --z-index: 12;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/outline---home-1-2.svg);
+    background-size: 100% 100%;
+    height: 24px;
+    left: 37px;
+    opacity: 1;
+    position: absolute;
+    top: 788px;
+    width: 24px;
+  }
+  
+  .home-page-u40category-2u41 .vector-C61RwL {
+    --z-index: 13;
+    background-color: transparent;
+    cursor: pointer;
+    height: 21px;
+    left: 184px;
+    opacity: 1;
+    position: absolute;
+    top: 788px;
+    width: 21px;
+  }
+  
+  .home-page-u40category-2u41 .vector-43-R69ixD {
+    --z-index: 0;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/vector-43.svg);
+    background-size: 100% 100%;
+    height: 23px;
+    left: -1px;
+    opacity: 1;
+    position: absolute;
+    top: -1px;
+    width: 23px;
+  }
+  
+  .home-page-u40category-2u41 .vector-44-R69ixD {
+    --z-index: 1;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/vector-44-1.svg);
+    background-size: 100% 100%;
+    height: 9px;
+    left: 6px;
+    opacity: 1;
+    position: absolute;
+    top: 6px;
+    width: 9px;
+  }
+  
+  .home-page-u40category-2u41 .titleslogan-C61RwL {
+    --z-index: 14;
+    background-color: transparent;
+    height: 62px;
+    left: 32px;
+    opacity: 1;
+    position: absolute;
+    top: 53px;
+    width: 330px;
+  }
+  
+  .home-page-u40category-2u41 .savior-7KuyOc {
+    --z-index: 0;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Lantinghei SC-Heavy', Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 179px;
+  }
+  
+  .home-page-u40category-2u41 .your-personal-saved-videos-vault-7KuyOc {
+    --z-index: 1;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Lao MN-Regular', Helvetica;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    top: 41px;
+    width: 326px;
+  }
+  
+  .home-page-u40category-2u41 .search-bar-C61RwL {
+    --z-index: 15;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/6610099e205dbc43f3511f0d/img/search-bar.png);
+    background-size: 100% 100%;
+    height: 36px;
+    left: 25px;
+    opacity: 1;
+    position: absolute;
+    top: 124px;
+    width: 337px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-3-C61RwL {
+    --z-index: 16;
+    background-color: #ffffff66;
+    border-radius: 35px;
+    cursor: pointer;
+    height: 28px;
+    left: 88px;
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    width: 62px;
+  }
+  
+  .home-page-u40category-2u41 .tech-C61RwL {
+    --z-index: 17;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Lao MN-Regular', Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 105px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    position: absolute;
+    text-align: left;
+    top: 170px;
+    width: auto;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-8-VMr6Om {
+    --z-index: 18;
+    background-color: #000000;
+    border-radius: 35px;
+    height: 28px;
+    left: 157px;
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    width: 77px;
+  }
+  
+  .home-page-u40category-2u41 .recipes-C61RwL {
+    --z-index: 19;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Lao MN-Regular', Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 173px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    position: absolute;
+    text-align: left;
+    top: 170px;
+    width: auto;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-9-VMr6Om {
+    --z-index: 20;
+    background-color: #ffffff66;
+    border-radius: 35px;
+    cursor: pointer;
+    height: 28px;
+    left: 240px;
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    width: 82px;
+  }
+  
+  .home-page-u40category-2u41 .research-C61RwL {
+    --z-index: 21;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Lao MN-Regular', Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 256px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    position: absolute;
+    text-align: left;
+    top: 170px;
+    width: auto;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-7-C61RwL {
+    --z-index: 22;
+    background-color: #ffffff66;
+    border-radius: 35px;
+    height: 28px;
+    left: 329px;
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    width: 29px;
+  }
+  
+  .home-page-u40category-2u41 .rectangle-2-C61RwL {
+    --z-index: 23;
+    background-color: #ffffff66;
+    border-radius: 35px;
+    cursor: pointer;
+    height: 28px;
+    left: 29px;
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    width: 52px;
+  }
+  
+  .home-page-u40category-2u41 .all-C61RwL {
+    --z-index: 24;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Lao MN-Regular', Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 48px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 0.75;
+    position: absolute;
+    text-align: left;
+    top: 170px;
+    width: auto;
+  }
+  
+  .home-page-u40category-2u41 .status-bar-i-phone-15-C61RwL {
+    --z-index: 25;
+    background-color: transparent;
+    height: 47px;
+    left: 0px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    width: 390px;
+  }
+  
+  .home-page-u40category-2u41 .notch-Xi9kYP {
+    --z-index: 0;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/notch@2x.png);
+    background-size: 100% 100%;
+    height: 30px;
+    left: 113px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 164px;
+  }
+  
+  .home-page-u40category-2u41 .left-side-Xi9kYP {
+    --z-index: 1;
+    background-color: transparent;
+    height: 21px;
+    left: 27px;
+    opacity: 1;
+    position: absolute;
+    top: 14px;
+    width: 54px;
+  }
+  
+  .home-page-u40category-2u41 .status-bar-time-RwnPf2 {
+    --z-index: 0;
+    background-color: transparent;
+    border-radius: 24px;
+    height: 21px;
+    left: 0px;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    width: 54px;
+  }
+  
+  .home-page-u40category-2u41 .x941-L5ZRph {
+    --z-index: 0;
+    background-color: transparent;
+    color: #010101;
+    font-family: 'SF Pro Text-Semibold', Helvetica;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.41px;
+    line-height: 22px;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    white-space: nowrap;
+    width: 54px;
+  }
+  
+  .home-page-u40category-2u41 .right-side-Xi9kYP {
+    --z-index: 2;
+    background-color: transparent;
+    height: 13px;
+    left: 286px;
+    opacity: 1;
+    position: absolute;
+    top: 19px;
+    width: 77px;
+  }
+  
+  .home-page-u40category-2u41 .battery-5pjQ7Q {
+    --z-index: 0;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/battery@2x.png);
+    background-size: 100% 100%;
+    height: 13px;
+    left: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 27px;
+  }
+  
+  .home-page-u40category-2u41 .wifi-5pjQ7Q {
+    --z-index: 1;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/wifi.svg);
+    background-size: 100% 100%;
+    height: 12px;
+    left: 26px;
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    width: 17px;
+  }
+  
+  .home-page-u40category-2u41 .icon-mobile-signal-5pjQ7Q {
+    --z-index: 2;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/icon---mobile-signal.svg);
+    background-size: 100% 100%;
+    height: 12px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    width: 18px;
+  }
+  
+  .home-page-u40category-2u41 .vector-9-C61RwL {
+    --z-index: 26;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/6610085f1291049d17390642/releases/66100872f7a069162d95c98a/img/vector-9.svg);
+    background-size: 100% 100%;
+    height: 13px;
+    left: 341px;
+    opacity: 1;
+    position: absolute;
+    top: 172px;
+    width: 7px;
+  }
+
+  </style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="home-page-u40category-2u41"><div class="container-center-horizontal"><div class="auto-animated screen home-page-u40category-2u41" data-id="73:1477" data-page="home-page-u40category-2u41" data-screens="home-page-u40category-2u41,home-expand-video-u40top-rightu41" style="margin-top: 70px; opacity: 1;"><div class="outline-home-1-VMr6Om" onclick="Lib.autoanim_redirect('%2A,home-page,,,', event)" onmouseover="" data-id="33:469"></div><div class="status-bar-i-phone-16-C61RwL" data-id="55:379"><div class="notch-M6YQOL" data-id="I55:379;839:7137"></div><div class="left-side-M6YQOL" data-id="I55:379;839:7139"><div class="status-bar-time-GrPdPU" data-id="I55:379;839:7140"><div class="x941-K887ag" data-id="I55:379;839:7140;839:7100">9:41</div></div></div><div class="right-side-M6YQOL" data-id="I55:379;839:7141"><div class="battery-Gu2dE7" data-id="I55:379;839:7142"></div><div class="wifi-Gu2dE7" data-id="I55:379;839:7146"></div><div class="icon-mobile-signal-Gu2dE7" data-id="I55:379;839:7150"></div></div></div><div class="background-decor-C61RwL" data-id="73:1478"></div><div class="background-decor-VMr6Om" data-id="73:1482"></div><div class="videos-C61RwL" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,home-page-u40category-2u41%23home-expand-video-u40top-rightu41,,ease-out,300', event)" onmouseover="" data-id="73:1486"></div><div class="bottom-bar-C61RwL" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,add-post-page,,,', event)" onmouseover="" data-id="73:1488"><div class="rectangle-7-2voLeP" data-id="73:1489"></div><div class="outline-home-1-2voLeP" data-id="73:1490"></div><div class="icon-magnifyingglass-2voLeP" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,search-page,,,', event)" onmouseover="" data-id="73:1491"></div><div class="user-profile-focus-c-2voLeP" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,profile,,,;home-expand-video-u40top-rightu41,profile,,,', event)" onmouseover="" data-id="73:1492"></div><div class="chat-bubble-typing-o-2voLeP" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,messages,,,;home-expand-video-u40top-rightu41,messages,,,', event)" onmouseover="" data-id="73:1496"></div></div><div class="home-indicator-C61RwL" data-id="73:1508"><div class="home-indicator-BJ28qq" data-id="I73:1508;5:3093"></div></div><div class="rectangle-8-C61RwL" data-id="73:1509"></div><div class="rectangle-9-C61RwL" data-id="73:1510"></div><div class="summary-C61RwL" data-id="73:1511">Summary...</div><div class="rectangle-15-C61RwL" data-id="73:1512"></div><div class="rectangle-21-C61RwL" data-id="73:1518"></div><div class="home-indicator-VMr6Om" data-id="73:1519"><div class="home-indicator-qn0gnF" data-id="I73:1519;5:3093"></div></div><div class="rectangle-22-C61RwL" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,home-page,,,;home-expand-video-u40top-rightu41,home-page,,,', event)" onmouseover="" data-id="73:1520"></div><div class="outline-home-1-C61RwL" data-id="73:1521"></div><div class="vector-C61RwL" onclick="Lib.autoanim_redirect('home-page-u40category-2u41,add-post-page,,,;home-expand-video-u40top-rightu41,add-post-page,,,', event)" onmouseover="" data-id="73:1543"><div class="vector-43-R69ixD" data-id="73:1544"></div><div class="vector-44-R69ixD" data-id="73:1545"></div></div><div class="titleslogan-C61RwL" data-id="83:584"><h1 class="savior-7KuyOc" data-id="83:585">SAVIOR</h1><div class="your-personal-saved-videos-vault-7KuyOc" data-id="83:586">Your personal saved videos vault.</div></div><div class="search-bar-C61RwL" data-id="83:587"></div><div class="rectangle-3-C61RwL" onclick="Lib.autoanim_redirect('%2A,home-page-u40category-1u41,,,', event)" onmouseover="" data-id="83:592"></div><div class="tech-C61RwL" data-id="83:593">Tech.</div><div class="rectangle-8-VMr6Om" data-id="83:594"></div><div class="recipes-C61RwL" data-id="83:595">Recipes</div><div class="rectangle-9-VMr6Om" onclick="Lib.autoanim_redirect('%2A,home-page-u40category-3u41,,,', event)" onmouseover="" data-id="83:596"></div><div class="research-C61RwL" data-id="83:597">Research</div><div class="rectangle-7-C61RwL" data-id="83:598"></div><div class="rectangle-2-C61RwL" onclick="Lib.autoanim_redirect('%2A,home-page,,,', event)" onmouseover="" data-id="83:599"></div><div class="all-C61RwL" data-id="83:600">All</div><div class="status-bar-i-phone-15-C61RwL" data-id="83:601"><div class="notch-Xi9kYP" data-id="I83:601;839:7137"></div><div class="left-side-Xi9kYP" data-id="I83:601;839:7139"><div class="status-bar-time-RwnPf2" data-id="I83:601;839:7140"><div class="x941-L5ZRph" data-id="I83:601;839:7140;839:7100">9:41</div></div></div><div class="right-side-Xi9kYP" data-id="I83:601;839:7141"><div class="battery-5pjQ7Q" data-id="I83:601;839:7142"></div><div class="wifi-5pjQ7Q" data-id="I83:601;839:7146"></div><div class="icon-mobile-signal-5pjQ7Q" data-id="I83:601;839:7150"></div></div></div><div class="vector-9-C61RwL" data-id="83:602"></div></div></div><script src="launchpad-js/launchpad-banner.js" async=""></script><script defer="" src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script><div id="t_preload_links"></div><div id="anima-interface" data-turbo-permanent="true" class="idle"><!---->
+</body></html>
